@@ -123,19 +123,15 @@ const Contact: React.FC = () => {
             <span className="text-pave-gold text-xs uppercase tracking-[0.3em] font-bold mb-6 block">Heures d'ouverture</span>
             <ul className="space-y-3 text-pave-charcoal text-sm sm:text-base">
               <li className="flex justify-between border-b border-gray-100 pb-2 gap-2">
-                <span className="font-bold shrink-0">Jeudi - Vendredi</span>
-                <span className="text-right">12:00-14:30, 18:30-22:00</span>
+                <span className="font-bold shrink-0">Lundi, Jeudi, Samedi</span>
+                <span className="text-right">18:00 - 21:00</span>
               </li>
               <li className="flex justify-between border-b border-gray-100 pb-2 gap-2">
-                <span className="font-bold shrink-0">Samedi</span>
-                <span className="text-right">18:30 - 22:00</span>
+                <span className="font-bold shrink-0">Vendredi, Dimanche</span>
+                <span className="text-right">12:00 - 14:00, 18:00 - 21:00</span>
               </li>
-              <li className="flex justify-between border-b border-gray-100 pb-2 gap-2">
-                <span className="font-bold shrink-0">Dimanche</span>
-                <span className="text-right">12:00-14:30, 18:30-21:30</span>
-              </li>
-              <li className="flex justify-between text-gray-400 italic gap-2">
-                <span>Lundi - Mercredi</span>
+              <li className="flex justify-between text-gray-400 italic gap-2 mt-2">
+                <span>Mardi - Mercredi</span>
                 <span>Fermé</span>
               </li>
             </ul>

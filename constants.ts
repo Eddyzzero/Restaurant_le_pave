@@ -5,7 +5,7 @@ export const RESTAURANT_INFO = {
   address: "Place de Chablis 3, 4190 Ferrières, Belgique",
   phone: "0495/47.40.43",
   email: "info@lepaverestaurant.com",
-  hours: "Ouvert du jeudi au dimanche",
+  hours: "Ouvert du jeudi au lundi",
   paymentMethods: ["Espèces", "Bancontact"]
 };
 
