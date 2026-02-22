@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
         {/* Texture de fond subtile */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <img 
-            src="https://picsum.photos/id/429/1000/1500" 
+            src="/images/Photos/_1021385.jpg" 
             alt="texture" 
             className="w-full h-full object-cover grayscale"
           />
