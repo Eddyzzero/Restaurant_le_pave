@@ -109,7 +109,7 @@ const Home: React.FC = () => {
           </div>
           <div className="overflow-hidden mb-2">
              <img 
-               src="/images/gallery/Logo - Le_pave_Quadri.png" 
+               src="/images/gallery/Logo - Le_pave_Blanc.png" 
                alt="Le Pavé Restaurant" 
                className="hero-line w-[280px] sm:w-[400px] md:w-[600px] lg:w-[700px] h-auto object-contain mx-auto mb-6"
              />

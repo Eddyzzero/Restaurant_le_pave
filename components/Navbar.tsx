@@ -39,14 +39,15 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed w-full z-[100] transition-all duration-700 ease-[0.22,1,0.36,1] font-sans ${
-        scrolled 
-          ? 'bg-pave-cream/95 backdrop-blur-xl py-4 border-b border-black/5' 
-          : 'bg-transparent py-6 md:py-8'
-      }`}
-    >
-      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+    <>
+      <nav 
+        className={`fixed top-0 left-0 w-full z-[110] transition-all duration-700 ease-[0.22,1,0.36,1] font-sans ${
+          scrolled && !isOpen
+            ? 'bg-pave-cream/95 backdrop-blur-xl py-4 border-b border-black/5' 
+            : `bg-transparent ${scrolled ? 'py-4' : 'py-6 md:py-8'}`
+        }`}
+      >
+        <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 z-[110]">
           <span className={`font-serif text-2xl md:text-3xl font-bold tracking-widest uppercase transition-colors duration-500 ${shouldUseDarkText ? 'text-pave-dark' : 'text-white'}`}>
@@ -93,6 +94,7 @@ const Navbar: React.FC = () => {
           }
         </button>
       </div>
+      </nav>
 
       {/* Mobile Menu Overlay - Version Centrée Revisitée */}
       <div className={`fixed inset-0 bg-pave-cream z-[105] flex flex-col justify-center items-center gap-8 transition-all duration-700 ease-[0.76, 0, 0.24, 1] md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
@@ -115,7 +117,7 @@ const Navbar: React.FC = () => {
           Réserver une table
         </Link>
       </div>
-    </nav>
+    </>
   );
 };
 

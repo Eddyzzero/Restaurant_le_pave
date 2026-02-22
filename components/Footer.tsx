@@ -14,11 +14,10 @@ const Footer: React.FC = () => {
             Des produits locaux, une passion véritable.
           </p>
           <div className="flex gap-4 mt-4 justify-center md:justify-start">
-             {/* Mock Social Icons */}
-            <a href="#" className="btn btn-circle btn-sm btn-outline text-white hover:bg-pave-gold hover:border-pave-gold">
+            <a href="https://www.facebook.com/p/Le-Pav%C3%A9-61556670831802/?locale=fr_FR" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm btn-outline text-white hover:bg-pave-gold hover:border-pave-gold">
               <Facebook size={18} />
             </a>
-            <a href="#" className="btn btn-circle btn-sm btn-outline text-white hover:bg-pave-gold hover:border-pave-gold">
+            <a href="https://www.instagram.com/lepaverestaurant/" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm btn-outline text-white hover:bg-pave-gold hover:border-pave-gold">
               <Instagram size={18} />
             </a>
           </div>
