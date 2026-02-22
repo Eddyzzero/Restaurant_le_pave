@@ -142,18 +142,28 @@ const Contact: React.FC = () => {
           </div>
         </section>
 
-        {/* Paiement & Extras */}
+        {/* Paiement & Infos Légales */}
         <section className="contact-section-right">
-          <div className="bg-pave-dark p-6 sm:p-8 md:p-12 text-white rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
-            <div>
-              <h3 className="text-2xl font-serif text-pave-gold mb-2 text-center md:text-left">Paiements acceptés</h3>
-              <p className="text-gray-400 text-center md:text-left">Espèces et Bancontact disponibles sur place.</p>
-            </div>
-            <div className="flex gap-4">
-               <div className="w-16 h-10 bg-white/10 rounded border border-white/20 flex items-center justify-center">
-                 <CreditCard size={20} className="text-pave-gold" />
-               </div>
-               <div className="w-16 h-10 bg-white/10 rounded border border-white/20 flex items-center justify-center text-[10px] font-bold">CASH</div>
+          <div className="bg-pave-dark p-6 sm:p-8 md:p-12 text-white rounded-2xl flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-8">
+            <div className="space-y-6 flex-1 w-full text-center md:text-left">
+              <div>
+                <h3 className="text-2xl font-serif text-pave-gold mb-2">Paiements acceptés</h3>
+                <p className="text-gray-400 flex items-center justify-center md:justify-start gap-3">
+                  Espèces et Bancontact disponibles sur place.
+                  <span className="flex gap-2 ml-2">
+                    <span className="w-10 h-7 bg-white/10 rounded flex items-center justify-center border border-white/20"><CreditCard size={14} className="text-pave-gold" /></span>
+                    <span className="w-10 h-7 bg-white/10 rounded flex items-center justify-center border border-white/20 text-[8px] font-bold">CASH</span>
+                  </span>
+                </p>
+              </div>
+              
+              <div className="pt-4 border-t border-white/10">
+                <h3 className="text-xl font-serif text-pave-gold mb-2">Informations légales</h3>
+                <div className="text-gray-400 space-y-1">
+                  <p>TVA : BE1019 116 939</p>
+                  <p>CRELAN : BE27 1030 9666 1073</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

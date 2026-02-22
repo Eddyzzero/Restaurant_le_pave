@@ -44,6 +44,10 @@ const Footer: React.FC = () => {
           <p className="text-sm mt-4 text-gray-400">
             Paiements: Espèces & Bancontact
           </p>
+          <div className="text-sm mt-4 text-gray-400 space-y-1">
+            <p>TVA : BE1019 116 939</p>
+            <p>CRELAN : BE27 1030 9666 1073</p>
+          </div>
         </nav>
       </div>
       <div className="footer px-6 md:px-10 py-4 border-t border-white/10 bg-neutral-900 text-neutral-content flex flex-col md:flex-row justify-center md:justify-between items-center gap-2 container mx-auto">
