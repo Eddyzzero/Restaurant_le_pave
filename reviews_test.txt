@@ -1,0 +1,5 @@
+﻿export const REVIEWS: Review[] = [
+  { id: 1, author: "Marc Vanders", rating: 5, text: "Incontestablement la meilleure adresse pour les amateurs de viande de la rÃ©gion. La cÃ´te Ã  l'os Ã©tait fondante, maturÃ©e Ã  la perfection. Un service qui connaÃ®t ses produits sur le bout des doigts." },
+  { id: 2, author: "Sandrine L.", rating: 5, text: "Une rÃ©vÃ©lation culinaire. On sent le respect du produit dÃ¨s la premiÃ¨re bouchÃ©e. Le bÅ“uf Blanc Bleu Belge est sublimÃ©. L'os Ã  moelle en entrÃ©e est un passage obligÃ© !" },
+  { id: 3, author: "Julien Dubuisson", rating: 5, text: "Magnifique cadre et viande de qualitÃ© exceptionnelle. Le chef Johan maÃ®trise la cuisson Ã  la braise comme personne. Une adresse qui porte bien son nom, on y revient pour le PavÃ© !" },
+];

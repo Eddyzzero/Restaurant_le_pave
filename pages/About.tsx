@@ -30,44 +30,72 @@ const About: React.FC = () => {
           </div>
           <div className="lg:w-1/2">
             <SectionWrapper delay={0.2}>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-pave-dark mb-4 md:mb-6">Une quête insatiable de qualité</h2>
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-pave-dark mb-4 md:mb-6">Une aventure familiale</h2>
               <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
-                Situé Place de Chablis, <strong>Le Pavé</strong> n'est pas qu'un restaurant, c'est un hommage à l'artisanat boucher. 
-                Notre passion se forge dans le choix de la bête, le respect des temps de repos et la précision de la découpe.
+                <strong>Le Pavé</strong> est avant tout une aventure familiale. Fondé et porté par <strong>Johan Bastin</strong>, chef cuisinier et propriétaire, le restaurant est né d’une passion profonde pour la cuisine et du désir de créer un lieu où l’on se sent chez soi.
               </p>
               <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
-                Nous travaillons main dans la main avec des éleveurs passionnés de notre région. Pour nous, une bonne viande 
-                doit avoir une histoire, un terroir et surtout, le temps de se révéler. C'est pourquoi nous disposons de nos propres 
-                chambres de maturation au cœur de l'établissement.
+                Autour de lui, Sylvia, Patrice et Noah participent à faire vivre cette maison avec engagement et authenticité. Ensemble, ils ont construit un établissement à leur image : sincère, chaleureux et centré sur le partage.
               </p>
               <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                Le Chef Johan et son équipe subliment ces coupes nobles sur une grille ardente, là où le feu rencontre la chair 
-                pour créer des saveurs inoubliables.
+                Chaque détail reflète leur volonté de proposer une expérience simple, humaine et généreuse, où la convivialité n’est pas un concept marketing, mais une réalité quotidienne.
               </p>
             </SectionWrapper>
           </div>
         </div>
 
-        {/* Philosophy Cards */}
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-16">
-          <SectionWrapper delay={0.1}>
-            <div className="bg-pave-dark text-white p-6 md:p-10 rounded-xl shadow-xl h-full flex flex-col justify-center text-center">
-              <h3 className="text-2xl font-serif font-bold text-pave-gold mb-4">La Braise & Le Grain</h3>
-              <p className="opacity-90 leading-relaxed">
-                "Sublimer sans dénaturer." C'est notre credo. Nous n'utilisons aucun artifice. 
-                Le goût authentique provient d'un assaisonnement juste, d'un bois de qualité pour la cuisson 
-                et d'une connaissance intime des différents muscles et de leur potentiel.
+        {/* Notre philosophie */}
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16 mb-12 lg:mb-24">
+          <div className="lg:w-1/2">
+            <SectionWrapper delay={0.1}>
+              <div className="relative">
+                <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-pave-gold/30 rounded-lg hidden md:block"></div>
+                <img 
+                  src="/images/Photos/_1021424.jpg" 
+                  alt="La passion culinaire" 
+                  className="rounded-lg shadow-xl relative z-10 w-full aspect-[4/3] object-cover"
+                />
+              </div>
+            </SectionWrapper>
+          </div>
+          <div className="lg:w-1/2">
+            <SectionWrapper delay={0.2}>
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-pave-dark mb-4 md:mb-6">Notre philosophie</h2>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
+                Au Pavé, la cuisine repose sur une conviction claire : travailler des produits locaux et de qualité est la base d’une table authentique. <strong>Johan Bastin</strong> met un point d’honneur à valoriser les producteurs de la région et à respecter le rythme des saisons.
               </p>
-            </div>
-          </SectionWrapper>
-          <SectionWrapper delay={0.2}>
-             <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden shadow-xl">
-               <img src="/images/Photos/_1021431.jpg" alt="Viande maturée d'exception" className="absolute inset-0 w-full h-full object-cover" />
-               <div className="absolute inset-0 bg-black/40 flex items-center justify-center p-8 text-center">
-                  <h3 className="text-3xl font-serif font-bold text-white">L'empreinte du terroir</h3>
-               </div>
-             </div>
-          </SectionWrapper>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                La passion de la cuisine guide chaque assiette. Il ne s’agit pas seulement de servir un repas, mais de transmettre une émotion, une attention, un savoir-faire. Le restaurant défend une approche familiale où le client est accueilli avec simplicité, dans un esprit de proximité et de respect.
+              </p>
+            </SectionWrapper>
+          </div>
+        </div>
+
+        {/* L’expérience au Pavé */}
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-20">
+          <div className="lg:w-1/2">
+            <SectionWrapper delay={0.1}>
+              <div className="relative">
+                <div className="absolute -top-4 -left-4 w-full h-full border-2 border-pave-gold/30 rounded-lg hidden md:block"></div>
+                <img 
+                  src="/images/Photos/_1021617.jpg" 
+                  alt="L'ambiance au Pavé" 
+                  className="rounded-lg shadow-xl relative z-10 w-full aspect-[4/3] object-cover"
+                />
+              </div>
+            </SectionWrapper>
+          </div>
+          <div className="lg:w-1/2">
+            <SectionWrapper delay={0.2}>
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-pave-dark mb-4 md:mb-6">L’expérience au Pavé</h2>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
+                Entrer au Pavé, c’est découvrir un cadre agréable et une ambiance chaleureuse où l’on peut partager un moment en famille ou entre amis. L’atmosphère se veut détendue, conviviale et accessible à tous.
+              </p>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                L’équipe met un soin particulier à l’accueil et au service, afin que chacun se sente attendu et considéré. Le restaurant n’est pas simplement un lieu où l’on mange, mais un espace de rencontre, de partage et de plaisir autour d’une cuisine sincère.
+              </p>
+            </SectionWrapper>
+          </div>
         </div>
 
       </div>

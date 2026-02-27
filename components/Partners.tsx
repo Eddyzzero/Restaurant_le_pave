@@ -8,9 +8,29 @@ const PARTNERS = [
   { name: 'Charcuteries Saint-Martin', src: '/images/gallery/Partenaire - Les_charcuteries_saint_martin_Logo.png' },
   { name: 'TeaTower', src: '/images/gallery/Partenaire - Teatower_Logo.webp' },
   { name: 'Maison Massart', src: '/images/gallery/Partenaire -maison_massart_Logo.png' },
+  { name: 'Le Parfum Glacé', src: null },
 ];
 
 const Partners: React.FC = () => {
+  const renderPartner = (partner: typeof PARTNERS[0], index: number, prefix: string) => (
+    <div 
+      key={`${prefix}-${index}`} 
+      className="w-32 md:w-48 h-20 md:h-32 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 transform hover:scale-105"
+    >
+      {partner.src ? (
+        <img 
+          src={partner.src} 
+          alt={`${partner.name} logo`} 
+          className="max-w-full max-h-full object-contain"
+        />
+      ) : (
+        <span className="text-pave-cream font-serif text-lg md:text-xl text-center whitespace-normal px-2">
+          {partner.name}
+        </span>
+      )}
+    </div>
+  );
+
   return (
     <section className="bg-pave-dark py-16 md:py-24 border-t border-pave-dark/5 overflow-hidden">
       <SectionWrapper>
@@ -29,53 +49,16 @@ const Partners: React.FC = () => {
         <div className="flex animate-marquee whitespace-nowrap items-center hover:pause">
           {/* First set of logos */}
           <div className="flex items-center gap-12 md:gap-24 px-6 md:px-12">
-            {PARTNERS.map((partner, index) => (
-              <div 
-                key={`p1-${index}`} 
-                className="w-32 md:w-48 h-20 md:h-32 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 transform hover:scale-105"
-              >
-                <img 
-                  src={partner.src} 
-                  alt={`${partner.name} logo`} 
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
+            {PARTNERS.map((partner, index) => renderPartner(partner, index, 'p1'))}
           </div>
 
           {/* Duplicate set for seamless loop */}
           <div className="flex items-center gap-12 md:gap-24 px-6 md:px-12">
-            {PARTNERS.map((partner, index) => (
-              <div 
-                key={`p2-${index}`} 
-                className="w-32 md:w-48 h-20 md:h-32 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 transform hover:scale-105"
-              >
-                <img 
-                  src={partner.src} 
-                  alt={`${partner.name} logo`} 
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
+            {PARTNERS.map((partner, index) => renderPartner(partner, index, 'p2'))}
           </div>
           
-           {/* Third set just to be safe on ultra-wide screens if needed, 
-               but 2 sets usually enough if container width < 2 * content width.
-               Let's add a third to be safe for 4k screens given 6 logos x ~200px + gaps is ~1500px, 
-               so 3000px total for 2 sets vs 3840px screen width. */}
-           <div className="flex item-center gap-12 md:gap-24 px-6 md:px-12">
-            {PARTNERS.map((partner, index) => (
-              <div 
-                key={`p3-${index}`} 
-                className="w-32 md:w-48 h-20 md:h-32 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 transform hover:scale-105"
-              >
-                <img 
-                  src={partner.src} 
-                  alt={`${partner.name} logo`} 
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
+           <div className="flex items-center gap-12 md:gap-24 px-6 md:px-12">
+            {PARTNERS.map((partner, index) => renderPartner(partner, index, 'p3'))}
           </div>
         </div>
         

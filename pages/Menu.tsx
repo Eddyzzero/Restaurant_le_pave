@@ -65,9 +65,37 @@ const Menu: React.FC = () => {
         <div className="w-full max-w-4xl mx-auto text-center mb-16 px-5 sm:px-10">
           <span className="text-[10px] uppercase tracking-[0.5em] text-pave-gold font-bold mb-6 block animate-fade-in">Maison de Viandes</span>
           <h1 className="text-5xl sm:text-7xl md:text-[8vw] font-serif font-light text-pave-dark mb-6 md:mb-10 tracking-tighter">La Carte</h1>
-          <p className="text-gray-500 max-w-lg mx-auto font-light text-lg leading-relaxed italic">
-            Une sélection rigoureuse valorisant le circuit court et l'exceptionnel.
-          </p>
+          <div className="max-w-2xl mx-auto mt-10 p-8 border border-pave-gold/20 bg-white/50 backdrop-blur-sm rounded-2xl relative overflow-hidden group">
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-pave-gold/40 to-transparent"></div>
+            <span className="text-[9px] uppercase tracking-[0.4em] text-pave-gold font-bold mb-6 block">Suggestions du moment</span>
+            
+            <div className="space-y-6">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-pave-dark/5 pb-4">
+                <div className="text-left">
+                  <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Entrée</span>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic">Sashimi de bœuf</h3>
+                </div>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">18€</span>
+              </div>
+
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-pave-dark/5 pb-4">
+                <div className="text-left">
+                  <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Plat</span>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Jambonneau sauce moutarde à l'ancienne et Jack Daniel's miel</h3>
+                </div>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">26€</span>
+              </div>
+
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                <div className="text-left">
+                  <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Dessert</span>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic">Pain perdu caramel beurre salé et sa boule de glace à la vanille</h3>
+                </div>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">12€</span>
+              </div>
+            </div>
+            <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-pave-gold/40 to-transparent"></div>
+          </div>
         </div>
       </SectionWrapper>
 
@@ -165,19 +193,6 @@ const Menu: React.FC = () => {
           )}
         </div>
         
-        {/* Info sélection Vins */}
-        {activeTab === 'wine' && (
-          <div className="mt-16 md:mt-24 p-6 sm:p-10 border border-pave-gold/20 bg-pave-dark/5 rounded-none sm:rounded-xl text-center">
-             <h4 className="text-pave-gold font-serif text-xl mb-4 italic">Sélection</h4>
-             <p className="text-gray-500 text-sm leading-relaxed">
-               Vins sélectionnés par :<br/>
-               <strong className="text-pave-charcoal">Matthieu GASPAR</strong><br/>
-               Rue de Borlon 56 — 5377 Bonsin<br/>
-               GSM : 0470 / 41 20 91<br/>
-               Email : auchaiquiinspire@gmail.com
-             </p>
-          </div>
-        )}
 
         <SectionWrapper className="mt-16 md:mt-32 pt-8 md:pt-16 border-t border-pave-dark/5 text-center">
           <p className="text-[10px] text-gray-400 uppercase tracking-[0.4em] font-bold">

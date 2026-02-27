@@ -149,7 +149,7 @@ const Gallery: React.FC = () => {
             <div 
               key={img.id}
               ref={el => { itemsRef.current[i] = el; }}
-              className="absolute w-[220px] sm:w-[280px] md:w-[450px] aspect-[3/4] preserve-3d group"
+              className="absolute w-[300px] sm:w-[500px] md:w-[750px] aspect-[3/2] preserve-3d group"
               onClick={() => i === activeIndex && setSelectedImage(img.url)}
             >
               {/* Cadre de l'image avec Border Radius 12px (rounded-xl) */}

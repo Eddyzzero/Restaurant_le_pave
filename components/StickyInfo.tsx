@@ -26,16 +26,6 @@ const StickyInfo: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="h-6 md:h-8 w-[1px] bg-white/10"></div>
-          
-          {/* Prix Moyen */}
-          <div className="flex flex-col">
-            <span className="text-[8px] md:text-[10px] uppercase tracking-widest text-gray-400">Prix Moyen</span>
-            <div className="flex items-center gap-1">
-              <span className="font-serif text-lg md:text-xl text-white font-bold">~33€</span>
-              <span className="text-[8px] md:text-[10px] text-gray-500">/pp</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>

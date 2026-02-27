@@ -86,18 +86,28 @@ const Contact: React.FC = () => {
         {/* Téléphone & Réservation */}
         <section className="contact-section-right">
           <span className="text-pave-gold text-xs uppercase tracking-[0.3em] font-bold mb-6 block">Prendre rendez-vous</span>
-          <div className="group">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-serif text-pave-dark mb-6 md:mb-8 group-hover:italic transition-all duration-500">
-              Par téléphone uniquement
-            </h2>
-            <a 
-              href={`tel:${RESTAURANT_INFO.phone}`}
-              className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-light text-pave-charcoal hover:text-pave-gold transition-colors duration-500 flex items-center gap-4 break-all sm:break-normal"
-            >
-              {RESTAURANT_INFO.phone}
-              <ArrowRight size={40} className="hidden md:block opacity-0 group-hover:opacity-100 -translate-x-10 group-hover:translate-x-0 transition-all duration-500" />
-            </a>
-            <p className="text-gray-400 mt-6 max-w-md">
+          <div className="space-y-8">
+            <div className="group">
+              <a 
+                href={`tel:${RESTAURANT_INFO.phone}`}
+                className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-pave-charcoal hover:text-pave-gold transition-colors duration-500 flex items-center gap-4 break-all sm:break-normal"
+              >
+                {RESTAURANT_INFO.phone}
+                <ArrowRight size={40} className="hidden md:block opacity-0 group-hover:opacity-100 -translate-x-10 group-hover:translate-x-0 transition-all duration-500" />
+              </a>
+            </div>
+
+            <div className="group">
+              <a 
+                href={`mailto:${RESTAURANT_INFO.email}`}
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-pave-charcoal hover:text-pave-gold transition-colors duration-500 flex items-center gap-4 break-all"
+              >
+                {RESTAURANT_INFO.email}
+                <ArrowRight size={30} className="hidden md:block opacity-0 group-hover:opacity-100 -translate-x-10 group-hover:translate-x-0 transition-all duration-500" />
+              </a>
+            </div>
+
+            <p className="text-gray-400 max-w-md">
               Nous privilégions le contact direct pour mieux répondre à vos demandes spécifiques (allergies, événements, grandes tablées).
             </p>
           </div>
@@ -123,12 +133,12 @@ const Contact: React.FC = () => {
             <span className="text-pave-gold text-xs uppercase tracking-[0.3em] font-bold mb-6 block">Heures d'ouverture</span>
             <ul className="space-y-3 text-pave-charcoal text-sm sm:text-base">
               <li className="flex justify-between border-b border-gray-100 pb-2 gap-2">
-                <span className="font-bold shrink-0">Lundi, Jeudi, Samedi</span>
+                <span className="font-bold shrink-0">Lundi, Jeudi,Vendredi,Samedi</span>
                 <span className="text-right">18:00 - 21:00</span>
               </li>
               <li className="flex justify-between border-b border-gray-100 pb-2 gap-2">
-                <span className="font-bold shrink-0">Vendredi, Dimanche</span>
-                <span className="text-right">12:00 - 14:00, 18:00 - 21:00</span>
+                <span className="font-bold shrink-0">Dimanche</span>
+                <span className="text-right">18:00 - 21:00</span>
               </li>
               <li className="flex justify-between text-gray-400 italic gap-2 mt-2">
                 <span>Mardi - Mercredi</span>
@@ -157,6 +167,7 @@ const Contact: React.FC = () => {
                 <h3 className="text-xl font-serif text-pave-gold mb-2">Informations légales</h3>
                 <div className="text-gray-400 space-y-1">
                   <p>TVA : BE1019 116 939</p>
+                  <p>AFSCA : AER/ LIE / 034233</p>
                   <p>CRELAN : BE27 1030 9666 1073</p>
                 </div>
               </div>

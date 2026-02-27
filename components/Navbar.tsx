@@ -8,6 +8,7 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   const isHome = location.pathname === '/';
+  const isDarkPage = location.pathname === '/gallery';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +29,7 @@ const Navbar: React.FC = () => {
     document.body.style.overflow = nextState ? 'hidden' : '';
   };
 
-  const shouldUseDarkText = scrolled || !isHome || isOpen;
+  const shouldUseDarkText = isOpen || (scrolled ? true : (!isHome && !isDarkPage));
 
   const navLinks = [
     { name: 'Accueil', path: '/' },

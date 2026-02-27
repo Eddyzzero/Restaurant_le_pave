@@ -146,12 +146,12 @@ const Home: React.FC = () => {
               <SectionWrapper>
                 <h2 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-serif font-light text-pave-charcoal leading-[1.1] mb-6 md:mb-12 tracking-tighter">
                   Le respect du boucher,<br/>
-                  <span className="italic text-pave-gold font-light">l'art de la maturation.</span>
+                  <span className="italic text-pave-gold font-light">l'art de la sélection.</span>
                 </h2>
                 <div className="w-20 h-[1px] bg-pave-gold mb-6 md:mb-12"></div>
                 <p className="text-gray-500 leading-relaxed text-base sm:text-lg md:text-xl mb-6 md:mb-10 font-light max-w-xl">
-                  Au Pavé, nous célébrons le terroir à travers une sélection rigoureuse des meilleures races de bœufs. 
-                  Du Blanc Bleu Belge à la Simmental maturée, chaque pièce est choisie pour son grain et son persillage unique.
+                  <strong>Le Pavé</strong> est avant tout une aventure familiale portée par <strong>Johan Bastin</strong>. 
+                  Entouré de Sylvia, Patrice et Noah, ils ont bâti un lieu sincère et chaleureux où la convivialité est une réalité quotidienne et le partage, une seconde nature.
                 </p>
                 <Link to="/about" className="inline-flex items-center text-pave-dark border-b border-pave-dark/20 pb-2 hover:text-pave-gold hover:border-pave-gold transition-all uppercase tracking-[0.25em] text-[10px] font-bold mt-4">
                   Notre Savoir-Faire <ArrowRight size={14} className="ml-3" />
@@ -164,11 +164,11 @@ const Home: React.FC = () => {
                   <img 
                     ref={introImageRef}
                     src="/images/Photos/_1021617.jpg" 
-                    alt="Cave de maturation" 
+                    alt="Sélection bouchère" 
                     className="w-full h-[110%] object-cover grayscale hover:grayscale-0 transition-all duration-[1s] ease-out"
                   />
                   <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white/20 font-serif italic text-3xl md:text-6xl select-none pointer-events-none">
-                    Maturation
+                    Sélection
                   </div>
                 </div>
               </SectionWrapper>
@@ -191,18 +191,64 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <SectionWrapper>
             <div className="max-w-2xl">
-              <span className="text-pave-gold text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block">Pièce Signature</span>
+              <span className="text-pave-gold text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block">Plat Signature</span>
               <h2 className="text-4xl sm:text-6xl md:text-8xl font-serif font-light mb-6 md:mb-12 leading-[0.9] tracking-tighter">
-                Le Filet Pur<br/>
-                <span className="italic text-white/30 font-light">du Pavé</span>
+                Filet Pur<br/>
+                <span className="italic text-white/30 font-light">Black Angus</span>
               </h2>
               <p className="text-gray-400 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-6 md:mb-12 max-w-lg">
-                La pièce maîtresse de notre maison. Un bœuf Blanc Bleu Belge d'une tendreté absolue, 
-                marqué par une cuisson vive pour saisir les sucs et conserver un cœur juteux.
+                Notre pièce maîtresse en provenance directe de la <span className="text-pave-gold font-medium">Ferme Misse</span>. 
+                Un bœuf Black Angus d'une qualité exceptionnelle, sélectionné pour son persillage unique et sa tendreté incomparable.
               </p>
               <Link to="/menu" className="btn btn-outline border-white/20 text-white hover:bg-white hover:text-pave-dark rounded-none px-12 py-4 h-auto text-[10px] uppercase tracking-[0.3em] font-bold">
                 Découvrir nos coupes
               </Link>
+            </div>
+          </SectionWrapper>
+        </div>
+      </section>
+      {/* Gift Voucher Section */}
+      <section className="py-20 sm:py-32 bg-pave-cream">
+        <div className="container mx-auto px-6 md:px-12">
+          <SectionWrapper>
+            <div className="relative overflow-hidden bg-pave-dark p-8 md:p-16 lg:p-20 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12 border border-pave-gold/20 shadow-2xl">
+              {/* Background Decoration */}
+              <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none translate-x-1/4">
+                <img 
+                  src="/images/Photos/_1021389.jpg" 
+                  alt="Détail table" 
+                  className="w-full h-full object-cover grayscale"
+                />
+              </div>
+              <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-pave-gold/50 to-transparent"></div>
+
+              <div className="relative z-10 max-w-xl">
+                <span className="text-pave-gold text-[10px] uppercase tracking-[0.5em] font-bold mb-6 block">Le cadeau idéal</span>
+                <h2 className="text-4xl md:text-6xl font-serif font-light text-white mb-6 leading-[1.1] tracking-tighter">
+                  Offrez l’émotion <br/>
+                  <span className="italic text-pave-gold">du Pavé</span>
+                </h2>
+                <p className="text-gray-400 text-base sm:text-lg font-light leading-relaxed mb-4">
+                  Pour un anniversaire, une fête ou simplement pour le plaisir d’offrir, nos bons cadeaux permettent de découvrir l’excellence de notre maison de viandes.
+                </p>
+                <div className="flex items-center gap-6 justify-center md:justify-start">
+                  <div className="h-[1px] w-8 bg-pave-gold/40"></div>
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Valable 1 an sur toute la carte</span>
+                </div>
+              </div>
+
+              <div className="relative z-10 flex flex-col items-center gap-4">
+                <Link 
+                  to="/contact" 
+                  className="group relative px-10 py-5 bg-pave-gold text-pave-dark transition-all duration-700 overflow-hidden inline-block shadow-[0_10px_30px_-10px_rgba(212,175,55,0.4)]"
+                >
+                  <span className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-[0.22,1,0.36,1]"></span>
+                  <span className="relative z-10 text-[10px] uppercase tracking-[0.3em] font-bold group-hover:text-pave-dark transition-colors duration-500">
+                    Commander un bon
+                  </span>
+                </Link>
+                <p className="text-[9px] text-gray-500 uppercase tracking-[0.3em] font-bold">Disponible sur place ou par mail</p>
+              </div>
             </div>
           </SectionWrapper>
         </div>
