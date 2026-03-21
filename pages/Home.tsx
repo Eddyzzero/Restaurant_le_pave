@@ -163,9 +163,9 @@ const Home: React.FC = () => {
                 <div className="relative z-10 overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] rounded-sm aspect-[4/5] bg-pave-dark">
                   <img 
                     ref={introImageRef}
-                    src="/images/Photos/_1021617.jpg" 
+                    src="/images/Photos/_1021431.jpg" 
                     alt="Sélection bouchère" 
-                    className="w-full h-[110%] object-cover grayscale hover:grayscale-0 transition-all duration-[1s] ease-out"
+                    className="w-full h-[110%] object-cover transition-all duration-[1s] ease-out"
                   />
                   <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white/20 font-serif italic text-3xl md:text-6xl select-none pointer-events-none">
                     Sélection
