@@ -149,23 +149,23 @@ const Gallery: React.FC = () => {
             <div 
               key={img.id}
               ref={el => { itemsRef.current[i] = el; }}
-              className="absolute w-[300px] sm:w-[500px] md:w-[750px] aspect-[3/2] preserve-3d group"
+              className="absolute h-[300px] sm:h-[450px] md:h-[600px] max-w-[85vw] preserve-3d group flex justify-center items-center"
               onClick={() => i === activeIndex && setSelectedImage(img.url)}
             >
-              {/* Cadre de l'image avec Border Radius 12px (rounded-xl) */}
-              <div className="relative w-full h-full overflow-hidden rounded-xl border border-white/5 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)]">
+              {/* Cadre de l'image adaptatif (hauteur fixe, largeur dynamique basée sur l'image) */}
+              <div className="relative h-full w-fit max-w-full overflow-hidden rounded-xl border border-white/5 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] bg-black/50">
                 <img 
                   src={img.url} 
                   alt={img.alt} 
-                  className="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110"
+                  className="h-full w-auto max-w-full object-contain md:object-cover transition-transform duration-[2s] ease-out group-hover:scale-110"
                   draggable={false}
                 />
                 
                 {/* Overlay Infos */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 flex flex-col justify-end p-4 sm:p-8 md:p-12">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 flex flex-col justify-end p-4 sm:p-6 md:p-10 pointer-events-none">
                   <div className="translate-y-6 group-hover:translate-y-0 transition-transform duration-700">
-                    <p className="text-pave-gold text-[10px] uppercase tracking-widest mb-3 font-bold">{img.category}</p>
-                    <h3 className="text-xl sm:text-3xl font-serif italic mb-4 sm:mb-6 leading-none">{img.alt}</h3>
+                    <p className="text-pave-gold text-[10px] uppercase tracking-widest mb-2 md:mb-3 font-bold">{img.category}</p>
+                    <h3 className="text-lg sm:text-2xl md:text-3xl font-serif italic mb-3 sm:mb-4 md:mb-6 leading-none line-clamp-2">{img.alt}</h3>
                     <div className="flex items-center gap-3 text-white/40 text-[9px] uppercase tracking-[0.4em]">
                       <Maximize2 size={12} /> Agrandir
                     </div>

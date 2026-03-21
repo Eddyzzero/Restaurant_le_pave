@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
               </li>
               <li className="flex justify-between border-b border-gray-100 pb-2 gap-2">
                 <span className="font-bold shrink-0">Dimanche</span>
-                <span className="text-right">18:00 - 21:00</span>
+                <span className="text-right">12:00 - 14:00</span>
               </li>
               <li className="flex justify-between text-gray-400 italic gap-2 mt-2">
                 <span>Mardi - Mercredi</span>
