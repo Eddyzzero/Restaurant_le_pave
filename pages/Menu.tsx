@@ -73,25 +73,25 @@ const Menu: React.FC = () => {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-pave-dark/5 pb-4">
                 <div className="text-left">
                   <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Entrée</span>
-                  <h3 className="font-serif text-lg text-pave-charcoal italic">Sashimi de bœuf</h3>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Scampis crème ail des ours</h3>
                 </div>
-                <span className="font-serif text-pave-gold text-lg md:text-xl">18€</span>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">19€</span>
               </div>
 
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-pave-dark/5 pb-4">
                 <div className="text-left">
                   <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Plat</span>
-                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Jambonneau sauce moutarde à l'ancienne et Jack Daniel's miel</h3>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Côtes d’agneau grillées beurre d’ail</h3>
                 </div>
-                <span className="font-serif text-pave-gold text-lg md:text-xl">26€</span>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">30€</span>
               </div>
 
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
                 <div className="text-left">
                   <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Dessert</span>
-                  <h3 className="font-serif text-lg text-pave-charcoal italic">Pain perdu caramel beurre salé et sa boule de glace à la vanille</h3>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Moelleux au chocolat maison <span className="text-sm text-gray-500 not-italic">(avec sa boule de glace vanille et crème anglaise)</span></h3>
                 </div>
-                <span className="font-serif text-pave-gold text-lg md:text-xl">12€</span>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">11€</span>
               </div>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-pave-gold/40 to-transparent"></div>
