@@ -4,7 +4,7 @@ export const RESTAURANT_INFO = {
   name: "Le Pavé",
   address: "Place de Chablis 3, 4190 Ferrières, Belgique",
   phone: "0495/47.40.43",
-  email: "info@lepaverestaurant.com",
+  email: "lepaverestaurant@hotmail.com",
   hours: "Ouvert du jeudi au lundi",
   paymentMethods: ["Espèces", "Bancontact"]
 };
