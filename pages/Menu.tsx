@@ -72,24 +72,38 @@ const Menu: React.FC = () => {
             <div className="space-y-6">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-pave-dark/5 pb-4">
                 <div className="text-left">
-                  <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Entrée</span>
-                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Scampis crème ail des ours</h3>
+                  <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Boissons</span>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Trappiste Rochefort 8 <span className="text-sm text-gray-500 not-italic">(9,2°)</span></h3>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight mt-2">OH! Beer <span className="text-sm text-gray-500 not-italic">— bière blonde haute fermentation, légèrement houblonnée (4,8°)</span></h3>
                 </div>
-                <span className="font-serif text-pave-gold text-lg md:text-xl">19€</span>
+                <div className="flex flex-col items-end gap-1">
+                  <span className="font-serif text-pave-gold text-lg md:text-xl">6€</span>
+                  <span className="font-serif text-pave-gold text-lg md:text-xl">5€</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-pave-dark/5 pb-4">
+                <div className="text-left">
+                  <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Entrée</span>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Os à moelle et tartare à l'italienne</h3>
+                  <p className="text-sm text-gray-500 mt-1">(Supplément caviar 10 gr « Sturia» 19€)</p>
+                </div>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">19,50€</span>
               </div>
 
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-pave-dark/5 pb-4">
                 <div className="text-left">
                   <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Plat</span>
-                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Côtes d’agneau grillées beurre d’ail</h3>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Burger de bœuf Wagyu</h3>
+                  <p className="text-sm text-gray-500 mt-1 italic">Cheddar au sambal, oignons confits au yuzu, mayonnaise Umami, roquette</p>
                 </div>
-                <span className="font-serif text-pave-gold text-lg md:text-xl">30€</span>
+                <span className="font-serif text-pave-gold text-lg md:text-xl">28,50€</span>
               </div>
 
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
                 <div className="text-left">
                   <span className="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Dessert</span>
-                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Moelleux au chocolat maison <span className="text-sm text-gray-500 not-italic">(avec sa boule de glace vanille et crème anglaise)</span></h3>
+                  <h3 className="font-serif text-lg text-pave-charcoal italic leading-tight">Sorbet citron vert, crumble de pistaches, fraises, menthe et meringue</h3>
                 </div>
                 <span className="font-serif text-pave-gold text-lg md:text-xl">11€</span>
               </div>

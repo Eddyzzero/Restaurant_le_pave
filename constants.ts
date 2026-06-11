@@ -16,7 +16,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'e1', name: "Planche à partager", description: "Charcuteries et fromages locaux, 2 ou 4 pers", price: "19,50€ / 36,50€", category: 'starter' },
   { id: 'e2', name: "Carpaccio de bœuf Black Angus", description: "Roquette, noisettes torrifiées, mayonnaise truffe maison, poudre d'olive noire, balsamique", price: "18,50€", category: 'starter', isGlutenFree: true },
   { id: 'e3', name: "Saumon Gravlax", description: "Chantilly aux agrumes, mayonnaise aux herbes, oignons rouges pickles", price: "19,00€", category: 'starter' },
-  { id: 'e4', name: "Tartare de bœuf au couteau Black Angus", description: "Jaune d'œuf, cèpres, échalotes, cornichons", price: "17,50€", category: 'starter', isGlutenFree: true },
+  { id: 'e4', name: "Tartare de bœuf au couteau Black Angus", description: "Jaune d'œuf, câpres, échalotes, cornichons", price: "17,50€", category: 'starter', isGlutenFree: true },
   { id: 'e5', name: "Gratin végétarien", description: "Courgettes, feta, tomates", price: "15,50€", category: 'starter', isVegetarian: true },
   { id: 'e6', name: "Croquettes fromage & jambon d'Ardenne", description: "2 pièces", price: "15,00€", category: 'starter' },
   { id: 'e7', name: "Croquettes de homard", description: "2 pièces", price: "18,50€", category: 'starter' },
